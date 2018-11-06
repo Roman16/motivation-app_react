@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  #root {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+
+    a.tool-link {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .container {
+      display: flex;
+      height: 90%;
+
+      .content {
+        width: 100%;
+        display: flex;
+        overflow-y: auto;
+        background: rgba(0, 0, 0, 0.08);
+
+        .pagination-btn {
+          background: none;
+          border: 0;
+          padding: 8px 12px;
+          cursor: pointer;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.1);
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+        .active {
+          background: rgba(0, 0, 0, 0.07);
+        }
+
+      //  categories page
+        .categories-avatar {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-bottom: 30px;
+          .fileContainer {
+            padding: 0;
+            margin: 0;
+            box-shadow: none;
+
+            .chooseFileButton {
+              margin: 0;
+            }
+          }
+          .image {
+            width: 50%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .phrases-block {
+          .add-phrase {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            margin-bottom: 20px;
+          }
+
+          .MuiCardContent-root-188 {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
